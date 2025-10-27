@@ -1,0 +1,55 @@
+{
+  "name": "buildpost-cli",
+  "version": "1.0.0",
+  "description": "Turn your git commits into social media posts using AI (Node.js CLI)",
+  "bin": {
+    "buildpost": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "ts-node src/cli.ts",
+    "test": "jest",
+    "build": "tsc",
+    "postbuild": "cp -R src/templates dist/templates",
+    "start": "node dist/cli.js"
+  },
+
+  "keywords": [
+    "cli",
+    "openai",
+    "groq",
+    "git",
+    "ai",
+    "social-media",
+    "typescript"
+  ],
+  "author": "Tobiloba Oladele",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "clipboardy": "^5.0.0",
+    "commander": "^14.0.2",
+    "conf": "^15.0.2",
+    "dotenv": "^17.2.3",
+    "groq-sdk": "^0.34.0",
+    "openai": "^6.7.0",
+    "ora": "^9.0.0",
+    "simple-git": "^3.28.0",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
+    "@types/clipboardy": "^1.1.0",
+    "@types/commander": "^2.12.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.9.1",
+    "@types/ora": "^3.1.0",
+    "@types/yaml": "^1.9.6",
+    "babel-jest": "^30.2.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,6 @@
+prompt: |
+  As a software developer, you are creating a technical post for {platform}.
+  Based on the commit below, write a detailed and informative post:
+  Commit: "{message}"
+  Author: {author}
+  Date: {date}

@@ -1,0 +1,6 @@
+prompt: |
+  You are a software engineer composing a professional update for {platform}.
+  Please generate a concise and informative post based on the following commit details:
+  Commit Message: "{message}"
+  Author: {author}
+  Date: {date}
