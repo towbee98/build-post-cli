@@ -34,9 +34,9 @@ Before using the CLI, you need to configure your AI provider and API key.
 Set your API key for your chosen provider. Replace `<YOUR_API_KEY>` with your actual key.
 
 ```bash
-node dist/cli.js config set-key --provider openai <YOUR_OPENAI_API_KEY>
-node dist/cli.js config set-key --provider groq <YOUR_GROQ_API_KEY>
-node dist/cli.js config set-key --provider gemini <YOUR_GEMINI_API_KEY>
+buildpost config set-key --provider openai <YOUR_OPENAI_API_KEY>
+buildpost config set-key --provider groq <YOUR_GROQ_API_KEY>
+buildpost config set-key --provider gemini <YOUR_GEMINI_API_KEY>
 ```
 
 ### Set AI Provider and Model
@@ -45,13 +45,13 @@ Set your preferred AI provider and optionally specify a model. If no model is sp
 
 ```bash
 # Set OpenAI as provider (default model: gpt-4o-mini)
-node dist/cli.js config set-provider --provider openai
+buildpost config set-provider --provider openai
 
 # Set Groq as provider with a specific model
-node dist/cli.js config set-provider --provider groq --model mixtral-8x7b
+buildpost config set-provider --provider groq --model mixtral-8x7b
 
 # Set Gemini as provider with a specific model
-node dist/cli.js config set-provider --provider gemini --model gemini-pro
+buildpost config set-provider --provider gemini --model gemini-pro
 ```
 
 ### Show Current Configuration
@@ -59,7 +59,7 @@ node dist/cli.js config set-provider --provider gemini --model gemini-pro
 To view your current `buildpost-cli` configuration:
 
 ```bash
-node dist/cli.js config show
+buildpost config show
 ```
 
 ### Reset Configuration
@@ -67,7 +67,7 @@ node dist/cli.js config show
 To reset all configuration settings to their defaults:
 
 ```bash
-node dist/cli.js config reset
+buildpost config reset
 ```
 
 ## Usage
