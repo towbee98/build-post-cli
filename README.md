@@ -19,13 +19,10 @@ Turn your Git commits into engaging social media posts using AI (Node.js CLI).
 
 ## Installation
 
-To install the `buildpost-cli`, clone the repository and install the dependencies:
+To install the `buildpost-cli` globally, use npm:
 
 ```bash
-git clone https://github.com/your-username/buildpost-cli.git
-cd buildpost-cli
-npm install
-npm run build
+npm install -g buildpost-cli
 ```
 
 ## Configuration
@@ -75,11 +72,11 @@ node dist/cli.js config reset
 
 ## Usage
 
-**Important:** You must run the `buildpost-cli` from within the root directory of the Git repository for which you want to generate social media posts. The CLI needs access to the `.git` directory to fetch commit information.
+**Important:** You must run the `buildpost` command from within the root directory of the Git repository for which you want to generate social media posts. The CLI needs access to the `.git` directory to fetch commit information.
 
 ```bash
 cd /path/to/your/git/repo
-node /path/to/buildpost-cli/dist/cli.js generate [options]
+buildpost generate [options]
 ```
 
 ### Generate a Post from the Latest Commit
@@ -87,17 +84,17 @@ node /path/to/buildpost-cli/dist/cli.js generate [options]
 Generate a post from your most recent commit using default settings (casual style, Twitter platform):
 
 ```bash
-node dist/cli.js generate
+buildpost generate
 ```
 
 ### Generate with Specific Style and Platform
 
 ```bash
 # Professional post for LinkedIn
-node dist/cli.js generate --style professional --platform linkedin
+buildpost generate --style professional --platform linkedin
 
 # Technical post for Dev.to
-node dist/cli.js generate --style technical --platform devto
+buildpost generate --style technical --platform devto
 ```
 
 ### Generate from a Specific Commit
@@ -105,7 +102,7 @@ node dist/cli.js generate --style technical --platform devto
 Use a specific commit hash to generate a post:
 
 ```bash
-node dist/cli.js generate --commit <COMMIT_HASH>
+buildpost generate --commit <COMMIT_HASH>
 ```
 
 ### Generate from a Commit Range (Summarization)
@@ -113,7 +110,7 @@ node dist/cli.js generate --commit <COMMIT_HASH>
 Summarize a range of commits into a single post. For example, the last 3 commits:
 
 ```bash
-node dist/cli.js generate --range HEAD~3..HEAD
+buildpost generate --range HEAD~3..HEAD
 ```
 
 ### Prevent Copying to Clipboard
@@ -121,7 +118,7 @@ node dist/cli.js generate --range HEAD~3..HEAD
 By default, the generated post is copied to your clipboard. To disable this:
 
 ```bash
-node dist/cli.js generate --no-copy
+buildpost generate --no-copy
 ```
 
 ## Prompt Templates

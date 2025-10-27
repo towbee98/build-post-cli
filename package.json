@@ -1,6 +1,6 @@
 {
   "name": "buildpost-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Turn your git commits into social media posts using AI (Node.js CLI)",
   "bin": {
     "buildpost": "./dist/cli.js"
