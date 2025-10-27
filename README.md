@@ -1,4 +1,4 @@
-# BuildPost CLI
+# BuildPost CLI [![npm version](https://badge.fury.io/js/buildpost-cli.svg)](https://www.npmjs.com/package/buildpost-cli)
 
 Turn your Git commits into engaging social media posts using AI (Node.js CLI).
 
