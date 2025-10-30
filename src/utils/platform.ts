@@ -4,7 +4,7 @@ export const platformConfig = {
     maxLength: 280,
   },
   linkedin: {
-    maxLength: 1300,
+    maxLength: 4000,
   },
   devto: {
     maxLength: 10000,

@@ -1,10 +1,10 @@
 {
   "name": "buildpost-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Turn your git commits into social media posts using AI (Node.js CLI)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/towbee98/buildpost-cli.git"
+    "url": "https://github.com/towbee98/build-post-cli.git"
   },
   "bin": {
     "buildpost": "./dist/cli.js"
